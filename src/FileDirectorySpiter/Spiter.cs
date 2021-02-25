@@ -10,8 +10,6 @@ namespace FileDirectorySpiter
     {
         public SpitOptions Options { get; private set; }
 
-        private int number = 1;
-
         public void Spit(SpitOptions options)
         {
             this.Options = options;
@@ -70,7 +68,7 @@ namespace FileDirectorySpiter
 
             do
             {
-                package = Path.Combine(options.Path, $"{(string.IsNullOrWhiteSpace(options.Prefix) ? Path.GetFileName(options.Path) : options.Prefix)}{number++}");
+                package = Path.Combine(options.Path, $"{(string.IsNullOrWhiteSpace(options.Prefix) ? Path.GetFileName(options.Path) : options.Prefix)}{options.Number++}");
             }
             while (this.IsFullPackage(package, options.Size));
 

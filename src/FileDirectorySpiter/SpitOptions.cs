@@ -22,6 +22,11 @@ namespace FileDirectorySpiter
         public string Prefix { get; set; }
 
         /// <summary>
+        /// 命名起始编号
+        /// </summary>
+        public int Number { get; set; }
+
+        /// <summary>
         /// 指定重名文件是否覆盖
         /// </summary>
         public bool Overwrite { get; set; }
