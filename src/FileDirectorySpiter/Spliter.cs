@@ -4,13 +4,13 @@ using System.Text;
 using System.IO;
 using System.Linq;
 
-namespace FileDirectorySpiter
+namespace FileDirectorySpliter
 {
-    class Spiter
+    class Spliter
     {
-        public SpitOptions Options { get; private set; }
+        public SplitOptions Options { get; private set; }
 
-        public void Spit(SpitOptions options)
+        public void Split(SplitOptions options)
         {
             this.Options = options;
 
@@ -62,7 +62,7 @@ namespace FileDirectorySpiter
             }
         }
 
-        string NextPackageName(SpitOptions options)
+        string NextPackageName(SplitOptions options)
         {
             string package;
 

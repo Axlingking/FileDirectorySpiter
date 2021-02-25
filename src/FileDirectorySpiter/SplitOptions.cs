@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FileDirectorySpiter
+namespace FileDirectorySpliter
 {
-    class SpitOptions
+    class SplitOptions
     {
         /// <summary>
         /// 每个包内的文件数量
